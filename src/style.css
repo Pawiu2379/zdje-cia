@@ -1,13 +1,24 @@
-
-#nav{
-    justify-content: center;
-    grid-row: inherit;
-    display:grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    scale: 100%;
+body {
+    background-color: rgba(255, 255, 0, 0.827);
 }
 
-#pokemons{
+#nav {
+    margin: 0px;
+    padding: 0%;
+    justify-content: center;
+    grid-row: inherit;
+    display: block;
+}
+
+#nav p {
+    width: 100%;
+}
+
+#picture {
+    display: none;
+}
+
+#pokemons {
     scale: 100%;
     padding-top: 30px;
     justify-content: center;
@@ -15,31 +26,31 @@
     display: block;
 }
 
-#next{
+#next {
     display: block;
     justify-content: center;
     text-align: center;
     scale: 100%;
 }
 
-#previous{
+#previous {
     display: block;
     justify-content: center;
     text-align: center;
     scale: 100%;
 }
 
-#big{
+#big {
     justify-content: center;
     grid-row: inherit;
-    display:grid;
-    grid-template-columns: 20% 50% 20% ;
+    display: grid;
+    grid-template-columns: 20% 50% 20%;
 }
 
-#startstop{
+#startstop {
     text-align: center;
     justify-content: center;
     grid-row: inherit;
-    display:grid;
+    display: grid;
     grid-template-columns: 50% 50%;
 }
