@@ -1,0 +1,45 @@
+
+#nav{
+    justify-content: center;
+    grid-row: inherit;
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    scale: 100%;
+}
+
+#pokemons{
+    scale: 100%;
+    padding-top: 30px;
+    justify-content: center;
+    text-align: center;
+    display: block;
+}
+
+#next{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    scale: 100%;
+}
+
+#previous{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    scale: 100%;
+}
+
+#big{
+    justify-content: center;
+    grid-row: inherit;
+    display:grid;
+    grid-template-columns: 20% 50% 20% ;
+}
+
+#startstop{
+    text-align: center;
+    justify-content: center;
+    grid-row: inherit;
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
