@@ -91,13 +91,8 @@ body {
     display: none;
 }
 
-#pokemon {
-    width: 100%;
-    transform: rotate(0deg);
-}
-
 #pokemons {
-    width: 100%;
+    scale: 100%;
     padding-top: 30px;
     justify-content: center;
     text-align: center;
@@ -141,6 +136,7 @@ body {
     grid-row: inherit;
     display: grid;
     grid-template-columns: 50% 50%;
+<<<<<<< HEAD
 }
 
 .zdjecie img {
@@ -169,3 +165,6 @@ body {
     border-radius: 30px;
     border: black solid;
 } */
+=======
+}
+>>>>>>> parent of acb450e (git)
