@@ -18,12 +18,13 @@ function defult() {
 
 document.getElementById('next').addEventListener('click', () => {
     index + 1
-    document.getElementById('pokemon').src = zdjecia[index]
-
+    clearInterval(adsd)
+    defult()
 })
 document.getElementById('previous').addEventListener('click', () => {
+    clearInterval(adsd)
     index - 1
-    document.getElementById('pokemon').src = zdjecia[index]
+    defult()
 })
 
 
@@ -32,6 +33,7 @@ document.getElementById('pokemon').addEventListener('click', () => {
 })
 
 document.getElementById('pokemon').addEventListener('contextmenu', () => {
+    clearInterval(adsd)
     set()
 })
 
