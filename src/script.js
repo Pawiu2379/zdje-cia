@@ -1,7 +1,12 @@
 const zdjecia = ["src/imgs/image1.png", "src/imgs/image2.png", "src/imgs/image3.png", "src/imgs/image4.png", "src/imgs/image5.png"]
-
+let adsd;
 let index = 0
-let adsd = setInterval(defult, 500)
+
+var pokemons = document.getElementById('pokemon');
+
+function set() {
+    let adsd = setInterval(defult, 5000)
+}
 
 function defult() {
     document.getElementById('pokemon').src = zdjecia[index]
@@ -11,18 +16,16 @@ function defult() {
     }
 }
 
-document.getElementById('next').addEventListener('click', () => {
+document.getElementById('lewyPierwszy').addEventListener('click', () => {
     index + 1
     clearInterval(adsd)
     defult()
 })
-document.getElementById('previous').addEventListener('click', () => {
+document.getElementById('prawyPierwszy').addEventListener('click', () => {
     clearInterval(adsd)
     index - 1
     defult()
 })
-
-
 
 
 document.getElementById('pokemon').addEventListener('click', () => {
@@ -33,12 +36,53 @@ document.getElementById('pokemon').addEventListener('click', () => {
         clearInterval(adsd)
     }
 
-<<<<<<< HEAD
-document.getElementById('pokemon').addEventListener('contextmenu', () => {
-    clearInterval(adsd)
-    set()
+    document.getElementById('pokemon').addEventListener('contextmenu', () => {
+        clearInterval(adsd)
+        set()
+    })
 })
-=======
->>>>>>> parent of acb450e (git)
+
+var scsl = 0
+
+document.getElementById('lewyDrugi').addEventListener('click', () => {
+    scsl = scsl - 1
+    pokemons.style.transform = `scaleY(${scsl})`
+    if (scsl == -2) {
+        scsl = 1
+        pokemons.style.transform = `scaleY(${scsl})`
+    } else {
+        scsl = -1
+        pokemons.style.transform = `scaleY(${scsl})`
+    }
+})
+document.getElementById('prawyDrugi').addEventListener('click', () => {
+    scsl = scsl - 1
+    if (scsl == -2) {
+        scsl = 1
+        pokemons.style.transform = `scaleX(${scsl})`
+    } else {
+        scsl = -1
+        pokemons.style.transform = `scaleX(${scsl})`
+    }
+})
+
+var dgr = 0
+document.getElementById('lewyTrzeci').addEventListener('click', () => {
+    dgr = dgr + 90
+    pokemons.style.transform = `rotate(${dgr}deg)`
 
 })
+
+
+var scale = 100
+document.getElementById('prawyTrzeci').addEventListener('click', () => {
+    scale = scale + 1
+    pokemons.style.scale = `${scale}%`
+})
+
+document.getElementById('prawyTrzeci').addEventListener('contextmenu', () => {
+    scale = 100
+    pokemons.style.scale = `${scale}%`
+})
+
+window.onload = set()
